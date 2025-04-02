@@ -209,7 +209,37 @@ header {
     }
 
     .hero {
-        padding: 3rem 0;
+        padding: 2rem 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .titles {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .profile-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .titles h1 {
+        font-size: 2rem;
+    }
+
+    .titles h2 {
+        font-size: 1.5rem;
     }
 
     .nav-links {
@@ -218,7 +248,7 @@ header {
         right: -100%;
         width: 70%;
         height: 100vh;
-        background-color: #EEEEEC;
+        background-color: #FFF9F1;
         padding: 80px 20px 20px;
         display: flex;
         flex-direction: column;
@@ -226,7 +256,7 @@ header {
         gap: 2rem;
         transition: right 0.3s ease-in-out;
         z-index: 99;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
     }
 
     .nav-links.active {
@@ -240,7 +270,7 @@ header {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 249, 241, 0.8);
         z-index: -1;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
@@ -259,7 +289,7 @@ header {
     }
 
     .nav-links a:hover {
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: rgba(0, 0, 0, 0.02);
     }
 
     .social-link {
@@ -270,14 +300,6 @@ header {
     .social-link img {
         width: 24px;
         height: 24px;
-    }
-
-    .titles h1 {
-        font-size: 2rem;
-    }
-
-    .titles h2 {
-        font-size: 1.5rem;
     }
 
     .one-liner {
