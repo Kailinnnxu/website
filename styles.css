@@ -263,8 +263,9 @@ header {
         right: 0;
     }
 
+    .nav-links::before,
     .nav-links.active::before {
-        display: none;
+        display: none !important;
     }
 
     .nav-links a {
