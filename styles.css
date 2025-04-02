@@ -219,14 +219,15 @@ header {
     }
 
     .titles {
-        order: 2;
+        order: 1;
+        width: 100%;
     }
 
     .hero-image {
-        order: 1;
+        order: 2;
         width: 80%;
         max-width: 300px;
-        margin: 0 auto;
+        margin: 2rem auto 0;
     }
 
     .profile-image {
@@ -236,10 +237,12 @@ header {
 
     .titles h1 {
         font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .titles h2 {
         font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .nav-links {
