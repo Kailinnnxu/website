@@ -210,39 +210,48 @@ header {
 
     .hero {
         padding: 2rem 0;
+        width: 100%;
     }
 
     .hero-content {
+        display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 2rem;
-        text-align: center;
+        width: 100%;
     }
 
     .titles {
         order: 1;
+        flex: none;
         width: 100%;
+        margin-bottom: 2rem;
     }
 
     .hero-image {
         order: 2;
-        width: 80%;
+        flex: none;
+        width: 100%;
         max-width: 300px;
-        margin: 2rem auto 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     .profile-image {
-        max-width: 100%;
+        width: 100%;
+        max-width: 300px;
         height: auto;
     }
 
     .titles h1 {
         font-size: 2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .titles h2 {
         font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .nav-links {
