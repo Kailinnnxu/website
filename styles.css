@@ -254,6 +254,18 @@ header {
         margin-bottom: 1rem;
     }
 
+    /* Add a full screen overlay */
+    .hamburger.active + .nav-links::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 249, 241, 0.98);
+        z-index: 98;
+    }
+
     .nav-links {
         position: fixed;
         top: 0;
@@ -269,16 +281,10 @@ header {
         gap: 2rem;
         transition: right 0.3s ease-in-out;
         z-index: 99;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
     }
 
     .nav-links.active {
         right: 0;
-    }
-
-    .nav-links::before,
-    .nav-links.active::before {
-        display: none !important;
     }
 
     .nav-links a {
@@ -287,6 +293,8 @@ header {
         width: 100%;
         text-align: center;
         transition: background-color 0.3s ease;
+        position: relative;
+        z-index: 100;
     }
 
     .nav-links a:hover {
