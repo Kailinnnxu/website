@@ -1,0 +1,193 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFF9F1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #EEEEEC;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Gilda Display', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #666;
+}
+
+.social-link img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero {
+    padding: 6rem 0;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.titles {
+    flex: 1;
+    text-align: center;
+}
+
+.titles h1, .titles h2 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.titles h1 {
+    font-size: 2.5rem;
+}
+
+.titles h2 {
+    font-size: 2rem;
+    color: #666;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* One-liner Section */
+.one-liner {
+    margin: 4rem 0;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Gilda Display', serif;
+    max-width: 900px;
+    text-align: center;
+}
+
+.name-italic {
+    font-style: italic;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.education {
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.education ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.education li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .titles h1 {
+        font-size: 2rem;
+    }
+
+    .titles h2 {
+        font-size: 1.5rem;
+    }
+
+    .one-liner {
+        font-size: 2.5rem;
+    }
+} 
