@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Self - Kailin Xu</title>
+    <link rel="stylesheet" href="digital-self.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Minimal Header -->
+    <header class="minimal-header">
+        <a href="index.html" class="logo-link">Kailin Xu</a>
+    </header>
+
+    <!-- Scene Container -->
+    <div class="scene-container">
+        <div id="scene-wrapper" class="scene-wrapper">
+            <!-- Image or video will be inserted here -->
+        </div>
+        <div class="scene-overlay"></div>
+        <div class="glow-overlay" id="glow-overlay"></div>
+    </div>
+
+    <!-- Minimal Settings Toggle (hidden by default, appears on hover/tap) -->
+    <div class="settings-panel" id="settings-panel">
+        <button class="settings-toggle" id="settings-toggle" aria-label="Settings">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"></path>
+            </svg>
+        </button>
+        <div class="settings-menu" id="settings-menu">
+            <label class="setting-item">
+                <input type="checkbox" id="glow-toggle" checked>
+                <span>Morning Glow</span>
+            </label>
+            <label class="setting-item">
+                <input type="checkbox" id="audio-toggle">
+                <span>Ambient Audio</span>
+            </label>
+            <div class="setting-item volume-control">
+                <label for="ambient-volume" class="volume-label">Volume:</label>
+                <input type="range" id="ambient-volume" min="0" max="100" value="100" class="volume-slider">
+                <span class="volume-value" id="ambient-volume-value">100%</span>
+            </div>
+            <label class="setting-item">
+                <input type="checkbox" id="video-audio-toggle">
+                <span>Video Audio</span>
+            </label>
+            <div class="setting-item volume-control">
+                <label for="video-volume" class="volume-label">Volume:</label>
+                <input type="range" id="video-volume" min="0" max="100" value="4" class="volume-slider">
+                <span class="volume-value" id="video-volume-value">4%</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kailin Xu. All rights reserved.</p>
+    </footer>
+
+    <script src="digital-self.js"></script>
+</body>
+</html>

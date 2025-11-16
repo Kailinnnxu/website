@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Kailin Xu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Kailin Xu</div>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="digital-self.html">Digital Self</a>
+                <a href="index.html#blog">Blog</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="https://www.linkedin.com/in/kailin-xu-msc-512120191/" target="_blank" class="social-link">
+                    <img src="assets/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-link">
+                    <img src="assets/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="window.location.href='project-GSA.html'" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/Projects/GSA2025_PPT_LTC_CFI/cover.PNG" alt="GSA 2025 LTC CFI" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">GSA 2025 LTC CFI</h3>
+                        <p class="project-description">Project description goes here. This is a brief overview of what the project is about and what it accomplishes.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Research</span>
+                            <span class="project-tag">Long-term Care</span>
+                            <span class="project-tag">Frailty</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="window.location.href='project-ML.html'" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/Projects/ML.png" alt="MindLink" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MindLink</h3>
+                        <p class="project-description">A mobile AI tool supporting real-time communication for older adults living with dementia and their caregivers.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">UX/UI Design</span>
+                            <span class="project-tag">Dementia</span>
+                            <span class="project-tag">caregiving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="window.location.href='project-VC.html'" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="assets/Projects/VC.png" alt="VocAL" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">VocAL</h3>
+                        <p class="project-description">Project description goes here. This is a brief overview of what the project is about and what it accomplishes.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Go-to-market</span>
+                            <span class="project-tag">Qualitative Research</span>
+                            <span class="project-tag">Dementia diagnosis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kailin Xu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+

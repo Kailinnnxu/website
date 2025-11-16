@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindLink - Kailin Xu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Kailin Xu</div>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="digital-self.html">Digital Self</a>
+                <a href="index.html#blog">Blog</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="https://www.linkedin.com/in/kailin-xu-msc-512120191/" target="_blank" class="social-link">
+                    <img src="assets/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-link">
+                    <img src="assets/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="project-detail">
+            <a href="projects.html" class="back-link">← Back to Projects</a>
+            
+            <div class="project-images">
+                <img src="assets/Projects/MindLink/01 Intro.jpg" alt="Intro" class="project-image-full">
+                <img src="assets/Projects/MindLink/02 Team.jpg" alt="Team" class="project-image-full">
+                <img src="assets/Projects/MindLink/03 Problem.jpg" alt="Problem" class="project-image-full">
+                <img src="assets/Projects/MindLink/04 Burden.jpg" alt="Burden" class="project-image-full">
+                <img src="assets/Projects/MindLink/05 stakeholder map.jpg" alt="Stakeholder Map" class="project-image-full">
+                <img src="assets/Projects/MindLink/06 Solution.jpg" alt="Solution" class="project-image-full">
+                <img src="assets/Projects/MindLink/07 Mockup.jpg" alt="Mockup 1" class="project-image-full">
+                <img src="assets/Projects/MindLink/08 Mockup.jpg" alt="Mockup 2" class="project-image-full">
+                <img src="assets/Projects/MindLink/09 Persona _ User cases.jpg" alt="Persona User Cases 1" class="project-image-full">
+                <img src="assets/Projects/MindLink/10 Persona _ User cases.jpg" alt="Persona User Cases 2" class="project-image-full">
+                <img src="assets/Projects/MindLink/11 Visual cue.jpg" alt="Visual Cue" class="project-image-full">
+                <img src="assets/Projects/MindLink/12 Competitor.jpg" alt="Competitor" class="project-image-full">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kailin Xu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
